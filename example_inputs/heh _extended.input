@@ -1,0 +1,79 @@
+Detailed input for Hartree-Fock calculations:
+number of atoms
+   2
+Atom labels, atom number Z, coords (Angstrom)
+He   2    0.00000000    0.00000000    0.00000000
+H    1    0.00000000    0.00000000    0.90000000
+Overall charge
+   1
+Number of basis funcs
+   2
+Maximum number of primitives
+   3
+Basis set: Func no, At label, Atom on which it is placed //  nprim // (zeta djk)
+    1 He   1
+    3
+    6.3624213900    0.4406303154
+    1.1589230000    0.4261584489
+    0.3136497900    0.1328149737
+    2 H    2
+    3
+    3.4252509100    0.2769343610
+    0.6239137300    0.2678388518
+    0.1688554000    0.0834736696
+*** Additional input in the case where integrals are read in to the code: ***
+A. Overlap integrals (first the number of such integrals):
+           3
+    1    1      1.0000000000000000
+    2    1      0.4528698089925308
+    2    2      1.0000000000000002
+B. Kinetic integrals (first the number of such integrals):
+           3
+    1    1      1.4117631826184838
+    2    1      0.1239885661375056
+    2    2      0.7600318835666090
+C. Nuclear Attraction integrals (first the number of such integrals):
+           3
+    1    1     -3.9241148557905818
+    2    1     -1.2913543308812965
+    2    2     -2.3490561802846890
+D. Two-Electron integrals (first the number of such integrals):
+           6
+    1    1    1    1      1.0557129427350722
+    2    1    1    1      0.3609744624634344
+    2    1    2    1      0.1541643473510182
+    2    2    1    1      0.5355257782204768
+    2    2    2    1      0.2944398093506304
+    2    2    2    2      0.7746059439198979
+*** Integral derivatives ***
+E. Derivatives of overlap integrals (first the number of such integral vectors):
+           1
+  Then the derivative vectors, as two indices: mu, nu b.f. indices, and three floats (d/dx, dy, dz)
+  The gradient is given with respect to the coordinates of the atom on which basis func mu is centred.
+    1    2    0.00000000    0.00000000    0.33709890
+F. Derivatives of kinetic energy integrals (first the number of such integral vectors):
+           1
+  Then the derivative vectors, as two indices: mu, nu b.f. indices, and three floats (d/dx, dy, dz)
+  The gradient is again given with respect to the coordinates of the atom on which basis func mu is centred.
+    1    2    0.00000000    0.00000000    0.26209489
+G. Derivatives of Nucleus-electron energy integrals (first the number of such integral vectors):
+           6
+  Then the derivative vectors, as three indices: mu, nu b.f. indices, atom index, three floats (d/dx, dy, dz)
+  Note the derivatives here are in general non-zero wrt to coordinates of ALL atoms.
+    1    1      1    0.00000000    0.00000000   -0.32008766
+    1    1      2    0.00000000    0.00000000    0.32008766
+    1    2      1    0.00000000    0.00000000   -1.29257396
+    1    2      2    0.00000000    0.00000000    1.29257396
+    2    2      1    0.00000000    0.00000000   -0.54899821
+    2    2      2    0.00000000    0.00000000    0.54899821
+H. Derivatives of two-electron integrals (first the number of such derivative vectors):
+           8
+  Then the derivative vectors as: Indices mu, nu, lambda, sigma of bfs ; index A of atom wrt derivative is taken ; (d/dx, dy, dz)
+   1   1   1   2         1    0.00000000    0.00000000    0.32446249
+   1   1   1   2         2    0.00000000    0.00000000   -0.32446249
+   1   1   2   2         1    0.00000000    0.00000000    0.22064836
+   1   1   2   2         2    0.00000000    0.00000000   -0.22064836
+   1   2   1   2         1    0.00000000    0.00000000    0.25205646
+   1   2   1   2         2    0.00000000    0.00000000   -0.25205646
+   1   2   2   2         1    0.00000000    0.00000000    0.28360241
+   1   2   2   2         2    0.00000000    0.00000000   -0.28360241

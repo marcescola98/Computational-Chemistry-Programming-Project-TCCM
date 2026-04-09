@@ -1,0 +1,29 @@
+Input for Hartree-Fock calculations:
+number of atoms
+   2
+Atom labels, atom number Z, coords (Angstrom)
+He   2    0.00000000    0.00000000    0.00000000
+H    1    0.00000000    0.00000000    0.90000000
+Overall charge
+   1
+Number of basis funcs
+   4
+Maximum number of primitives
+   6
+Basis set: Func no, At label, Atom on which it is placed //  nprim // (zeta djk)
+    1 He   1
+    3
+   38.4216340000    0.4414855700
+    5.7780300000    0.6938965807
+    1.2417740000    0.6649918170
+    2 He   1
+    1
+    0.2979640000    0.2874305587
+    3 H    2
+    3
+   18.7311370000    0.2149354183
+    2.8253937000    0.3645711272
+    0.6401217000    0.4150514277
+    4 H    2
+    1
+    0.1612778000    0.1813806839
