@@ -39,7 +39,7 @@ f2py -c hf_gradients.f90 -m hf_gradients
 ```
 
 ### Running the program
-```md```
+```md``
 ## Usage
 
 Run the code with:
